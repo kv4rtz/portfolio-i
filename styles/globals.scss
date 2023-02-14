@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+*::selection {
+  @apply bg-violet-600;
+}
+
+[data-aos="kvarcev-right"] {
+  opacity: 0;
+  transform: translateX(-50px) skew(0, -3deg);
+  transition-property: opacity, transform;
+
+  &.aos-animate {
+    opacity: 1;
+    transform: translateX(0) skew(0, -3deg);
+  }
+}
+
+[data-aos="kvarcev-right-v"] {
+  opacity: 0;
+  transform: translateX(-300px) skew(0, -3deg);
+  transition-property: opacity, transform;
+
+  &.aos-animate {
+    opacity: 1;
+    transform: translateX(-250px) skew(0, -3deg);
+  }
+}
+
+[data-aos="kvarcev-left-s"] {
+  opacity: 0;
+  transform: translateX(-50px) skew(0, -3deg);
+  transition-property: opacity, transform;
+
+  &.aos-animate {
+    opacity: 0.5;
+    transform: translateX(0) skew(0, -3deg);
+  }
+}
+
+[data-aos="kvarcev-left"] {
+  opacity: 0;
+  transform: translateX(50px) skew(0, -3deg);
+  transition-property: opacity, transform;
+
+  &.aos-animate {
+    opacity: 1;
+    transform: translateX(0) skew(0, -3deg);
+  }
+}

@@ -1,0 +1,9 @@
+.container {
+  @apply px-10;
+}
+
+@media (max-width: 425px) {
+  .container {
+    @apply px-2;
+  }
+}

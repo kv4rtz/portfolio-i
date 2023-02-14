@@ -1,0 +1,56 @@
+.wrapper {
+  animation: render ease-in-out 250ms;
+  @apply mt-16;
+}
+
+.title {
+  @apply text-7xl text-right;
+
+  & > span {
+    @apply text-violet-500;
+    &::selection {
+      @apply bg-violet-300;
+    }
+  }
+}
+
+.block {
+  @apply flex justify-between;
+}
+
+.scroll {
+  @apply p-2 hover:opacity-90 mb-10 transition-all cursor-pointer select-none text-2xl;
+}
+
+.subtitle {
+  @apply text-7xl mb-10;
+}
+
+@keyframes render {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .scroll {
+    @apply hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .video {
+    @apply hidden;
+  }
+
+  .title {
+    @apply mt-10 mb-[80%];
+  }
+
+  .block {
+    @apply hidden;
+  }
+}

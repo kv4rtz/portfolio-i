@@ -1,0 +1,15 @@
+.loading {
+  @apply absolute text-6xl top-1/2 left-1/2;
+  animation: delete ease-in-out 500ms;
+  animation-delay: 1000ms;
+  transform: translate(-50%, -50%) skew(0, -5deg);
+}
+
+@keyframes delete {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

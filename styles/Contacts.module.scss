@@ -1,0 +1,29 @@
+.wrapper {
+  @apply pt-20 pb-40;
+}
+
+.title {
+  @apply text-8xl;
+}
+
+.email {
+  @apply flex text-3xl py-10 underline hover:text-violet-500 transition;
+}
+
+.block {
+  @apply flex mt-10;
+
+  & > a {
+    @apply text-xl mr-10 underline hover:text-violet-500 transition;
+  }
+}
+
+.copyright {
+  @apply flex mt-10 opacity-50;
+}
+
+@media (max-width: 425px) {
+  .title {
+    @apply text-7xl;
+  }
+}
